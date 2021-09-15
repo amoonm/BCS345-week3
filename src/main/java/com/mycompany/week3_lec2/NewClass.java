@@ -11,14 +11,15 @@ package com.mycompany.week3_lec2;
  */
 public class NewClass {
     
-    int getSum(int a, int b) {
-        return a+b;
+    int getStrLength(String name) {
+        int l = name.length();
+        return l;
     }
     
     public static void main(String[] args) {
         NewClass nc = new NewClass();
-        int x=10, y=100;
-        int z= nc.getSum(x,y);
-        System.out.println("The sum is " + z);
+        String str= "Amoon Mainali";
+        int z= nc.getStrLength(str);
+        System.out.println("The length is " + z);
     }
 }
